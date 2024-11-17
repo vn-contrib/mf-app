@@ -1,12 +1,10 @@
-import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import Home from '@/routes/Home';
 
-const App = () => {
+export default function App() {
   return (
-    <div className="content">
-      <h1>Rsbuild with React</h1>
-      <p>Start building amazing things with Rsbuild.</p>
-    </div>
+    <Routes>
+      <Route index Component={Home} />
+    </Routes>
   );
-};
-
-export default App;
+}
